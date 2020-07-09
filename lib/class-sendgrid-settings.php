@@ -49,7 +49,8 @@ class Sendgrid_Settings {
       add_action( 'network_admin_menu', array( __CLASS__, 'add_network_settings_menu' ) );
     }
     // Add SendGrid Help contextual menu in the settings page
-    add_filter( 'contextual_help', array( __CLASS__, 'show_contextual_help' ), 10, 3 );
+    // add_filter( 'contextual_help', array( __CLASS__, 'show_contextual_help' ), 10, 3 );
+
     // Add SendGrid javascripts in header
     add_action( 'admin_enqueue_scripts', array( __CLASS__, 'add_headers' ) );
   }
